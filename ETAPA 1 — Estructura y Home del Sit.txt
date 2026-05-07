@@ -1,0 +1,20 @@
+ETAPA 1 — Estructura y Home del Sitio
+
+1)
+necesito una barra de navegación que contenga el nombre "GlobalImport S.A." en el lado izquierdo y link de navegación en el inicio, servicios, contacto y registro, el link de "registro" debe direccionar a la página registro.html y La navegación debe ser responsive: en pantallas pequeñas puede simplificarse (no se
+exige hamburger menu, pero suma). 
+
+en el encabezado principal necesito un banner llamativo que este relacionado con importación o comercio, el titulo debe estar en h1 con el nombre "GlobalImport S.A.", un Subtítulo o slogan de la empresa y botón de llamada a la acción (CTA) que lleve a la sección de servicios o al formulario de registro. 
+
+2)
+Necesito agregar una sección de servicios, en esta debe mostrar categorías de productos o servicios que pueda ofrecer la empresa de importación y distribución de productos electrónicos, indumentaria y artículos del hogar, cada servicio debe mostrarse como una tarjeta que contenga una imagen representativa, titulo del servicio, descripción breve (entre 2-3 oraciones) y Las tarjetas deben estar distribuidas en una grilla (grid o flexbox, mínimo 2 columnas en desktop).
+
+también necesito agregar una sección que se llame "¿Por qué elegirnos?" donde debe tener 5 puntos destacados que generen confianza, experiencia, variedad de productos y entre más, esta puede ser una sección simple con iconos y texto. 
+
+al final un Footer con nombre de la empresa "GlobalImport S.A.", links a redes sociales, email y teléfono de contactos.
+
+3) 
+necesito arreglar el tema del contacto, necesito que el link de navegación del contacto me dirija al footer, donde esta los links de las redes sociales y contacto telefónico y email.
+
+4)
+para el estilo, en style.css, necesito mínimo 2 o 3 paletas de colores coherentes y definidos, que no sean fuertes o incomodo a la vista, al menos 2 tipografías distintas, se puede utilizar Google Fonts, también necesito que las cards de servicios contengan box-shadow y efecto hover, el hero debe ocupar el 100% del ancho de la pantalla y debo tener un uso obligatorio de Flexbox o CSS Grid para el layout de las cards.
