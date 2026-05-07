@@ -1,9 +1,26 @@
 /* Estilos generales */
+:root {
+    /* Paleta Principal */
+    --primary-blue: #2196F3;
+    --primary-green: #4CAF50;
+    --dark-gray: #333;
+    --light-gray: #f9f9f9;
+    --white: #fff;
+    
+    /* Paleta Secundaria */
+    --light-blue: #E3F2FD;
+    --light-green: #E8F5E8;
+    
+    /* Paleta Acento */
+    --soft-orange: #FFAB91;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: var(--dark-gray);
 }
 
 /* Barra de navegación */
@@ -11,14 +28,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: var(--dark-gray);
+    color: var(--white);
     padding: 1rem;
 }
 
 .brand {
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links {
@@ -33,14 +51,14 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 0.5rem;
     transition: background-color 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: #555;
+    background-color: var(--primary-blue);
 }
 
 .hamburger {
@@ -52,16 +70,18 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--white);
     margin: 3px 0;
 }
 
 /* Banner */
 .banner {
-    background: linear-gradient(to right, #4CAF50, #2196F3);
-    color: white;
+    background: linear-gradient(to right, var(--primary-green), var(--primary-blue));
+    color: var(--white);
     text-align: center;
     padding: 4rem 2rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     background-image: url('assets/images/banner.jpg'); /* Asumiendo que hay una imagen */
     background-size: cover;
     background-position: center;
@@ -70,17 +90,19 @@ body {
 .banner h1 {
     margin: 0;
     font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .banner p {
     font-size: 1.5rem;
     margin: 1rem 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #FF5722;
-    color: white;
+    background-color: var(--soft-orange);
+    color: var(--white);
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 5px;
@@ -95,6 +117,11 @@ body {
 section {
     padding: 2rem;
     text-align: center;
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-gray);
 }
 
 /* Responsive */
@@ -129,7 +156,7 @@ section {
 }
 
 .tarjeta {
-    background-color: #f9f9f9;
+    background-color: var(--light-gray);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -148,7 +175,8 @@ section {
 
 .tarjeta h3 {
     margin: 1rem;
-    color: #333;
+    color: var(--dark-gray);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .tarjeta p {
@@ -178,7 +206,8 @@ section {
 
 .punto h4 {
     margin: 0.5rem 0;
-    color: #333;
+    color: var(--dark-gray);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .punto p {
@@ -187,8 +216,8 @@ section {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--dark-gray);
+    color: var(--white);
     padding: 2rem;
     text-align: center;
 }
@@ -199,14 +228,14 @@ footer {
 }
 
 .social-links a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     margin: 0 1rem;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #4CAF50;
+    color: var(--primary-green);
 }
 
 .contact-info p {
