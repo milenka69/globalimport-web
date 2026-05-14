@@ -23,3 +23,20 @@ para el estilo, en style.css, necesito mínimo 2 o 3 paletas de colores coherent
 ETAPA 2 - Formulario de Registro de Usuario
 
 1)
+Necesito un formulario que este dividido en al menos 4 secciones, con títulos, separadores y distintos fondos. En la primera sección deben ir los datos personales, Nombre completo con input text, fecha de nacimiento con input date, Rut o numero de documento aquí puede variar en input number o text, género con las opciones masculino, femenino, no binario y prefiero no decir y al final nacionalidad con al menos 8 países listados. 
+
+2)
+Para segunda sección debe tener los datos de contacto y acceso con correo electrónico con input email y una confirmación, contraseña con input password, requerido, con indicador visual de fuerza — puede ser solo
+visual en esta etapa y su confirmación de contraseña, y finalmente el teléfono con input tel y placeholder que indique el formato esperado. Para la siguiente sección debe ir la dirección de entrega con el país en select, provincia/estado en input text, ciudad con input text, Calle y número en input text, el código postal en input text, Piso y departamento que sea input text y opcional, y referencia o instrucciones adicionales en textarea, máximo 200 caracteres y opcional.
+
+3)
+Finalmente la ultima sección debe ir las preferencias y términos con categorías de interés (checkboxes múltiples: Electrónica, Indumentaria, Hogar, Otros), Tipo de cliente  (radio buttons: Consumidor final, Revendedor, Empresa), ¿Cómo nos conociste? (select: Redes sociales, Recomendación, Búsqueda web, Publicidad, Otro), Suscripción al newsletter (checkbox individual), Aceptación de Términos y Condiciones con checkbox obligatorio y con link a una página ficticia
+o modal, y Aceptación de la Política de Privacidad con checkbox obligatorio, además botones de acción de "Registrarme" en submit, centrado y con estilo destacado, "Limpiar formulario" en reset y con estilo secundario, y "Ya tengo cuenta, iniciar sesión" que sea ficticio.
+
+4)
+necesito mejorar el estilo del formulario, con campos que se vean en distintos estados :focus (borde de color y sombra suave)y que se diferencien entre todos, los campos con error deben tener una clase CSS lista para aplicar borde rojo llamativo. También el formulario debe estar centrado con un ancho máximo de 700-800px. El diseño debe ser responsive: en mobile los campos ocupan el 100% del ancho y finalmente que se haga uso de CSS Grid o Flexbox para alinear campos en dos columnas en desktop.
+
+
+ETAPA 3 - Validación del Formulario con JavaScript
+
+1)
