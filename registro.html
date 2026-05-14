@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>HTML Form Project</title>
 </head>
 <body>
@@ -60,6 +60,41 @@
 
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+        </section>
+
+        <section class="delivery-address">
+            <h2>Delivery Address</h2>
+            <hr>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="chile">Chile</option>
+                <option value="france">France</option>
+                <option value="spain">Spain</option>
+                <option value="brazil">Brazil</option>
+            </select>
+
+            <label for="state">Province/State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="street">Street and Number:</label>
+            <input type="text" id="street" name="street" required>
+
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" name="postal-code" required>
+
+            <label for="floor-department">Floor and Apartment (Optional):</label>
+            <input type="text" id="floor-department" name="floor-department">
+
+            <label for="additional-instructions">Additional Instructions (Optional):</label>
+            <textarea id="additional-instructions" name="additional-instructions" maxlength="200"></textarea>
         </section>
     </form>
 </body>
