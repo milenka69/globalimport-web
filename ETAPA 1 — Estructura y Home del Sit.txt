@@ -18,3 +18,8 @@ necesito arreglar el tema del contacto, necesito que el link de navegación del 
 
 4)
 para el estilo, en style.css, necesito mínimo 2 o 3 paletas de colores coherentes y definidos, que no sean fuertes o incomodo a la vista, al menos 2 tipografías distintas, se puede utilizar Google Fonts, también necesito que las cards de servicios contengan box-shadow y efecto hover, el hero debe ocupar el 100% del ancho de la pantalla y debo tener un uso obligatorio de Flexbox o CSS Grid para el layout de las cards.
+
+
+ETAPA 2 - Formulario de Registro de Usuario
+
+1)

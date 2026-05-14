@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <title>HTML Form Project</title>
+</head>
+<body>
+    <form>
+        <section class="personal-data">
+            <h2>Personal Data</h2>
+            <hr>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="rut">RUT / Document Number:</label>
+            <input type="text" id="rut" name="rut" required>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="non-binary"> Non-binary</label>
+                <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+            </fieldset>
+
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality" required>
+                <option value="">Select your nationality</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="chile">Chile</option>
+                <option value="france">France</option>
+                <option value="spain">Spain</option>
+                <option value="brazil">Brazil</option>
+            </select>
+        </section>
+
+        <section class="contact-access-data">
+            <h2>Contact and Access Data</h2>
+            <hr>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="email-confirm">Confirm Email:</label>
+            <input type="email" id="email-confirm" name="email-confirm" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="password-strength"></div>
+
+            <label for="password-confirm">Confirm Password:</label>
+            <input type="password" id="password-confirm" name="password-confirm" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+        </section>
+    </form>
+</body>
+</html>
