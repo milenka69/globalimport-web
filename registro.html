@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="registro.css">
     <title>HTML Form Project</title>
 </head>
 <body>
     <form>
         <section class="personal-data">
-            <h2>Personal Data</h2>
+            <h2>            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="registro.css">
+                <title>HTML Form Project</title>
+            </head>
             <hr>
             <label for="full-name">Full Name:</label>
             <input type="text" id="full-name" name="full-name" required>
@@ -96,6 +103,58 @@
             <label for="additional-instructions">Additional Instructions (Optional):</label>
             <textarea id="additional-instructions" name="additional-instructions" maxlength="200"></textarea>
         </section>
+        
+        <!-- Secciones anteriores... -->
+            
+        <section class="preferences-terms">
+            <h2>Preferences and Terms</h2>
+            <hr>
+
+            <fieldset>
+                <legend>Categories of Interest:</legend>
+                <label><input type="checkbox" name="interest" value="electronics"> Electronics</label>
+                <label><input type="checkbox" name="interest" value="clothing"> Clothing</label>
+                <label><input type="checkbox" name="interest" value="home"> Home</label>
+                <label><input type="checkbox" name="interest" value="others"> Others</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of Client:</legend>
+                <label><input type="radio" name="client-type" value="final-consumer" required> Final Consumer</label>
+                <label><input type="radio" name="client-type" value="reseller"> Reseller</label>
+                <label><input type="radio" name="client-type" value="company"> Company</label>
+            </fieldset>
+
+            <label for="how-did-you-know">How did you hear about us?</label>
+            <select id="how-did-you-know" name="how-did-you-know" required>
+                <option value="">Select an option</option>
+                <option value="social-media">Social Media</option>
+                <option value="recommendation">Recommendation</option>
+                <option value="web-search">Web Search</option>
+                <option value="advertising">Advertising</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="newsletter" value="subscribe"> Subscribe to our newsletter
+            </label>
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                I accept the <a href="#" target="_blank">Terms and Conditions</a>
+            </label>
+
+            <label>
+                <input type="checkbox" name="privacy" required>
+                I accept the <a href="#" target="_blank">Privacy Policy</a>
+            </label>
+        </section>
+
+        <div class="form-actions" style="text-align: center; margin-top: 20px;">
+            <button type="submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Register</button>
+            <button type="reset" style="background-color: #6C757D; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Clear Form</button>
+            <a href="#" style="display: inline-block; margin-top: 10px; color: #007BFF; text-decoration: none;">Already have an account? Log in</a>
+        </div>
     </form>
 </body>
 </html>
